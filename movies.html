@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviescom</title>
+    <link rel="stylesheet" href="mstyle.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>Moviescom</h1>
+    </div>
+    <div class="container">
+        <div class="movie-contain">
+            <h2>Movie Name</h2>
+            <h5>Actor Name</h5>
+            <h5>Director Name</h5>
+            <h5>Movie Overview</h5>
+            <button onclick="deletemv(event)">Delete</button>
+        </div>
+    </div>
+    <div class="pop-overlay"></div>
+    <div class="pop-box">
+        <h2>Add book</h2>
+        <form>
+            <input type="text" placeholder="Movie Name" id="mv-nm-input">
+            <input type="text" placeholder="Actor Name" id="mv-act-input">
+            <input type="text" placeholder="Direct Name" id="mv-dict-input">
+            <textarea placeholder="Short Description" id="mv-desc"></textarea>
+            <button id="add-mv">ADD</button>
+            <button id="cancel-pop">CANCEL</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-btn">+</button>
+    <script src="mscript.js"></script>
+</body>
+</html>
